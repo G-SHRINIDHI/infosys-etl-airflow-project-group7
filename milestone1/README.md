@@ -1,60 +1,154 @@
-📘 Milestone 1 – Basic ETL Pipeline
-📌 Objective
+# 📊 Infosys ETL Project (Milestones 1–3)
 
-The objective of this milestone is to implement a basic ETL (Extract, Load, Validate) pipeline using Python and SQLite. This process is executed manually without automation.
+---
 
-📂 Project Structure
-milestone1/
-│
-├── dag/
-│   └── etl_pipeline_dag.py     # Optional DAG (for demonstration)
-│
-├── scripts/
-│   ├── create_tables.py       # Creates database tables
-│   ├── load_data.py           # Loads CSV data into database
-│   └── check_data.py          # Validates data using SQL queries
-│
+## 📌 Project Overview
+This project implements a complete ETL (Extract, Transform, Load) pipeline using Python, SQLite, and Apache Airflow.
+
+The project is divided into three milestones:
+- **Milestone 1:** Basic ETL (Manual Execution)
+- **Milestone 2:** Data Cleaning & Transformation
+- **Milestone 3:** ETL Automation using Airflow
+
+---
+
+## 🧩 Tech Stack
+- Python
+- Pandas
+- SQLite
+- Apache Airflow
+
+---
+
+## 📂 Repository Structure
+
+
+.
+├── milestone1/
+├── milestone2/
+├── milestone3/
+├── presentation/
+├── agile/
 └── README.md
-🔄 Workflow
-create_tables.py → load_data.py → check_data.py
-⚙️ Implementation Details
-1️⃣ Create Tables (create_tables.py)
-Connects to SQLite database (infosys_etl.db)
-Creates tables:
-orders
-order_details
-sales_target
-Uses CREATE TABLE IF NOT EXISTS
-2️⃣ Load Data (load_data.py)
-Reads CSV files using pandas
-Renames columns to match schema
-Removes duplicate records
-Inserts data into database tables
-3️⃣ Validate Data (check_data.py)
-Executes SQL queries
-Counts records in each table
-Displays results in terminal
-▶️ How to Run
 
-Run the scripts in the following order:
 
+---
+
+## 🔹 Milestone 1 – Basic ETL
+- Created database tables
+- Loaded data from CSV files
+- Validated data using SQL queries
+- Executed scripts manually
+
+📁 Includes:
+- Python scripts
+- Outputs (screenshots)
+- Documentation
+
+---
+
+## 🔹 Milestone 2 – Data Cleaning & Transformation
+- Cleaned raw data
+- Converted date formats
+- Removed duplicates and null values
+- Standardized text and numeric fields
+
+📁 Includes:
+- Transformation scripts
+- Cleaned dataset outputs
+- Documentation
+
+---
+
+## 🔹 Milestone 3 – Airflow Automation
+- Created DAG for ETL pipeline
+- Automated execution using scheduling
+- Implemented logging
+- Configured email alerts for failures
+
+📁 Includes:
+- Airflow DAG file
+- Logs and outputs
+- Screenshots of Airflow UI
+- Documentation
+
+---
+
+## ⚙️ How to Run
+
+### Step 1: Clone Repository
+
+git clone <your-repo-link>
+cd <repo-name>
+
+
+---
+
+### Step 2: Run Milestone 1
+
+cd milestone1/scripts
 python create_tables.py
 python load_data.py
 python check_data.py
-📊 Expected Output
-Tables are created successfully
-Data is loaded into database
-Record counts are displayed:
-Total Orders
-Total Order Details
-Total Sales Targets
-⚠️ Note on DAG
-The DAG file (etl_pipeline_dag.py) is included only for demonstration
-Automation using Airflow is fully implemented in Milestone 3
-📝 Conclusion
 
-This milestone builds the foundation of the ETL pipeline by manually creating tables, loading data, and validating results using Python scripts.
 
-🚀 Future Scope
-Data cleaning and transformation (Milestone 2)
-Automation and scheduling using Airflow (Milestone 3)
+---
+
+### Step 3: Run Milestone 2
+
+cd milestone2/scripts
+python transform_data.py
+
+
+---
+
+### Step 4: Run Milestone 3 (Airflow)
+- Start Airflow services
+- Place DAG file in Airflow DAGs folder
+- Trigger DAG from Airflow UI
+
+---
+
+## 📸 Outputs
+- Screenshots of execution
+- Airflow DAG runs
+- Dataset outputs
+
+---
+
+## 📢 Alerts & Logging
+- Logging implemented in all scripts
+- Airflow configured to send email alerts on task failure
+
+---
+
+## 📑 Documentation
+Each milestone contains detailed documentation explaining:
+- Implementation steps
+- Code logic
+- Outputs
+
+---
+
+## 📊 Final Deliverables
+- ETL Pipeline (Manual + Automated)
+- Documentation for all milestones
+- Presentation (PPT)
+- Agile Template
+
+---
+
+## 👥 Team Members
+- Member 1  
+- Member 2  
+- Member 3  
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.
+
+---
+
+## 🎯 Conclusion
+This project demonstrates the complete lifecycle of an ETL pipeline, from manual execution to full aut
