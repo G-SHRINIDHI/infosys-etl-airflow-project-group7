@@ -16,7 +16,7 @@ DB_PATH = os.path.join(BASE_DIR, "data", "infosys.db")
 # -------------------------------
 st.set_page_config(page_title="Infosys ETL Dashboard", layout="wide")
 
-st.title("📊 Infosys ETL Dashboard (Milestone 4)")
+st.title("📊 ETL Dashboard")
 st.write("Interactive dashboard built using Streamlit for analyzing cleaned ETL data.")
 
 # -------------------------------
