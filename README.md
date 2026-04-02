@@ -48,7 +48,7 @@ Streamlit Dashboard (Visualization Layer)
 ## 📂 Project Structure
 
 
-.
+```bash
 ├── data/ # Raw CSV datasets
 ├── milestone1/ # Data ingestion & setup
 ├── milestone2/ # Data cleaning & transformation
@@ -57,6 +57,7 @@ Streamlit Dashboard (Visualization Layer)
 │ └── dashboard/ # Streamlit dashboard
 ├── README.md
 ├── LICENSE
+```
 
 
 ---
@@ -118,11 +119,6 @@ Apache Airflow is used for **workflow orchestration and automation**.
 ✔ **Alerts & Monitoring**  
 - Provides visibility into pipeline health  
 - Can be extended to trigger alerts on failures  
-
-👉 In this project:
-- DAG is implemented  
-- Execution is currently **manual (schedule=None)**  
-- Designed to support future automation  
 
 ---
 
@@ -235,9 +231,11 @@ Ensured data quality and consistency
 Prepared system for scalable automation
 
 ## 👥 Team Members
+```bash
 Shrinidhi
 Shreya
 Sruthi
+```
 
 ## 📜 License
 
