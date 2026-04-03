@@ -1,125 +1,144 @@
 # 📊 Milestone 4: Dashboards & Deployment (Weeks 7–8)
 
 ## 🎯 Objective
-The objective of Milestone 4 is to build an interactive dashboard for the ETL pipeline outputs and finalize deployment for real-time monitoring and analysis.
+
+The objective of Milestone 4 is to design and implement an interactive dashboard for visualizing ETL pipeline outputs and to prepare the system for deployment, enabling real-time monitoring and data-driven analysis.
 
 This milestone focuses on:
-- Building dashboards using **Streamlit**
-- Testing performance on production-scale datasets
-- Deploying the dashboard framework
 
-##  1. Dashboard Development (Streamlit)
+- Developing dashboards using Streamlit  
+- Testing performance on production-scale datasets  
+- Deploying the dashboard for real-time access  
+
+---
+
+## 🌐 Live Dashboard
+
+👉 Access the deployed Streamlit dashboard here:  
+🔗 https://infosy-82mu22cfxzaj3mjlwmoxtc.streamlit.app/
+
+---
+
+## 1. Dashboard Development (Streamlit)
 
 ### ✅ Tool Used
-- Streamlit (Python-based dashboard framework)
+- Streamlit (Python-based interactive dashboard framework)
 
 ### ✅ Data Source
+
 The dashboard reads data from the cleaned ETL output stored in the SQLite database:
 
-- `clean_orders`
-- `clean_order_details`
-- `clean_sales_target`
+- `clean_orders`  
+- `clean_order_details`  
+- `clean_sales_target`  
 
-Database used:
-```
+**Database Path:**
+
 /home/unix16/airflow/data/infosys.db
 
-```
+
+---
 
 ### ✅ Dashboard Features Implemented
 
 #### 📌 KPI Metrics
-The following key metrics are displayed:
-- Total Orders
-- Total Sales Amount
-- Total Profit
-- Total Quantity
+The dashboard displays the following key performance indicators:
+
+- Total Orders  
+- Total Sales Amount  
+- Total Profit  
+- Total Quantity  
+
+---
 
 #### 📌 Visualizations
-The dashboard includes the following charts:
-- Sales by Category (Bar Chart)
-- Profit by State (Top 10) (Bar Chart)
-- Monthly Sales Trend (Line Chart)
-- Top 10 Customers by Sales (Bar Chart)
-- Category Target vs Actual Sales Comparison (Bar Chart)
+
+The dashboard includes multiple analytical charts:
+
+- Sales by Category (Bar Chart)  
+- Profit by State (Top 10) (Bar Chart)  
+- Monthly Sales Trend (Line Chart)  
+- Top 10 Customers by Sales (Bar Chart)  
+- Category Target vs Actual Sales Comparison (Bar Chart)  
+
+---
 
 #### 📌 Filters
-Interactive filters were implemented for better analysis:
-- Filter by State
-- Filter by Category
-- Filter by Date Range
+
+Interactive filters are provided for dynamic data exploration:
+
+- Filter by State  
+- Filter by Category  
+- Filter by Date Range  
 
 ---
 
-##  2. Production-Scale Dataset Testing
+## 2. Production-Scale Dataset Testing
 
 ### ✅ Purpose
-To ensure the dashboard performs efficiently on large datasets similar to production environments.
+
+To evaluate dashboard performance under large-scale data conditions similar to real-world production environments.
 
 ### ✅ Approach
-- Dataset size was increased by replicating rows using Pandas.
-- Dashboard responsiveness and chart loading time were tested.
+
+- Increased dataset size by replicating rows using Pandas  
+- Tested dashboard responsiveness and chart rendering performance  
 
 ### ✅ Outcome
-The dashboard was successfully tested for scalability and was able to load and visualize large datasets.
+
+- Dashboard handled increased data volume efficiently  
+- Visualizations loaded correctly without performance issues  
 
 ---
 
-##  3. Deployment
+## 3. Deployment
 
 ### ✅ Deployment Platform
-- Streamlit Cloud (Recommended)
+- Streamlit Cloud  
 
 ### ✅ Deployment Steps
-1. Push the dashboard code to the GitHub repository.
-2. Login to Streamlit Cloud.
-3. Connect the GitHub repository.
-4. Select the Streamlit entry file:
-```
+
+1. Push dashboard code to GitHub repository  
+2. Log in to Streamlit Cloud  
+3. Connect GitHub repository  
+4. Select the entry file:
 
 milestone4/dashboard/app.py
 
-````
-5. Deploy the application.
+5. Deploy the application  
 
 ---
 
 ## ⚙️ How to Run Milestone 4 Locally
 
-Navigate to the dashboard folder:
-
+### Step 1: Navigate to dashboard folder
 ```bash
 cd milestone4/dashboard
-````
-
-Install required dependencies:
-
+```
+### Step 2: Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
-Run the dashboard:
-
+### Step 3: Run the application
 ```bash
 streamlit run app.py
 ```
-
----
-
 ## 📂 Folder Structure
-
-```
+```bash
 milestone4/
    dashboard/
       app.py
       requirements.txt
    README.md
 ```
-
----
-
 ## 🏁 Conclusion
 
-Milestone 4 successfully implements an interactive Streamlit dashboard to visualize and monitor the cleaned ETL pipeline output.
-The dashboard supports KPI monitoring, interactive filtering, visual insights, production-scale testing, and deployment readiness.
+Milestone 4 successfully delivers an interactive and scalable dashboard solution for visualizing ETL pipeline outputs.
+
+Enables real-time data analysis
+Provides interactive filtering and KPI monitoring
+Supports large-scale dataset handling
+Successfully deployed using Streamlit Cloud
+
+This milestone demonstrates the final integration of data engineering and data visualization components in a real-world workflow.
 
