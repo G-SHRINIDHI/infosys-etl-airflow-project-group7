@@ -232,9 +232,9 @@ Prepared system for scalable automation
 
 ## 👥 Team Members
 ```bash
-Shrinidhi
-Shreya
 Sruthi
+Shreya
+Shrinidhi
 ```
 
 ## 📜 License
